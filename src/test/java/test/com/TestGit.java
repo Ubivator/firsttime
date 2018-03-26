@@ -46,12 +46,9 @@ public class TestGit {
     public void TestForGit() {
 
        driver = new ChromeDriver();
-        driver.navigate().to("https://www.google.com/");
-
-
-        
+        driver.navigate().to("https://www.google.com/");    
         driver.findElement(By.name("q")).sendKeys("lavrynovych");
-        driver.findElement(By.name("btnK")).submit();
+        //driver.findElement(By.name("btnK")).submit();
     }
 
     @Test
