@@ -58,7 +58,7 @@ public class TestGit {
 
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.google.com/");
-        //driver.findElement(By.name("q")).sendKeys("lavrynovych");
+        driver.findElement(By.name("q")).sendKeys("lavrynovych");
         driver.findElement(By.name("btnK")).click();
     }
 
