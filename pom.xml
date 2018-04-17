@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.myhomeproject</groupId>
     <artifactId>testGit</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>myprodaction</version>
     <packaging>jar</packaging>
     <dependencies>
          <dependency>

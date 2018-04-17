@@ -13,8 +13,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-
-
 /**
  *
  * @author Sviatik
@@ -27,33 +25,25 @@ public class TestGit {
     public TestGit() {
     }
 
-   
-
-  
-
     @Before
     public void setUp() {
         doc = new Doctor();
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Sviatik\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe");
-        
 
-        
     }
-
-    
 
     @Test
     public void TestForGit() {
 
-       driver = new ChromeDriver();
-        driver.navigate().to("https://www.google.com/");    
+        driver = new ChromeDriver();
+        driver.navigate().to("https://www.google.com/");
         driver.findElement(By.name("q")).sendKeys("lavrynovych");
         driver.findElement(By.name("btnK")).submit();
     }
 
     @Test
     public void TestForGit2() {
-       doc.setName("tom");
+        doc.setName("tom");
         assertEquals("tom", doc.getName());
     }
 }
