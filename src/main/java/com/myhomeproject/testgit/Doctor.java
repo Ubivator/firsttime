@@ -22,6 +22,7 @@ public class Doctor {
 
     @Override
     public String toString() {
+        System.out.println("Changes to GitHub code")
         return "Doctor{" + "name=" + name + '}';
     }
     
